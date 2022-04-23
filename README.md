@@ -1,6 +1,7 @@
 # Aplication to manage animal and responsible person
 
 This project was written in java and can be opened any IDE
+
 To run, you must run the main file.
 
 To use the application:
