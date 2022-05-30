@@ -5,7 +5,9 @@ public enum Situacao {
 		
 	private final int valor;
 		
-	private Situacao(int valor) { this.valor = valor; }	
+	private Situacao(int valor) { 
+		this.valor = valor; 
+	}		
 	
 	public int getValor() {		
 		return valor;		
