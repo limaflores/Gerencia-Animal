@@ -5,13 +5,15 @@ import java.util.List;
 public class Cliente extends Pessoa {
 	private String email;
 	//private Animal animal;
-	private List<Animal> animais;	
+	//private List<Animal> animais;	
 	
 	public Cliente() {}
-	public Cliente(String nome, String endereco, String telefone, String email, List<Animal> animais) {
+	public Cliente(String nome, String endereco, String telefone, String email
+			//, List<Animal> animais
+			) {
 		super(nome, endereco, telefone);
 		this.email = email;		
-		this.animais = animais;
+		//this.animais = animais;
 	}
 	
 	public String getEmail() {
@@ -23,15 +25,17 @@ public class Cliente extends Pessoa {
 	
 	@Override
 	public String toString() {
-		String aux = "";
-		if(animais!=null) {
-			for(Animal animal: animais) {
-				if(animal!=null) {
-					aux += animal.toString() + "\n";
-				}
-			}
-		}
-		return "Cliente [" + super.toString() + "email=" + email + aux + "]";
+//		String aux = "";
+//		if(animais!=null) {
+//			for(Animal animal: animais) {
+//				if(animal!=null) {
+//					aux += animal.toString() + "\n";
+//				}
+//			}
+//		}
+		return "Cliente [" + super.toString() + "email=" + email +
+				//aux + 
+				"]";
 		
 	}	
 	

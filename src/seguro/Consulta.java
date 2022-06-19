@@ -5,12 +5,16 @@ import java.util.Date;
 public class Consulta {
 	private Date data;
 	private String nomeVeterinario;
+	//private Animal animal;
 	
 	public Consulta() {}
-	public Consulta( Date data, String nomeVeterinario ) {
+	public Consulta( Date data, String nomeVeterinario
+			//, Animal animal 
+			) {
 		super();
 		this.data = data;
 		this.nomeVeterinario = nomeVeterinario;		
+		//this.animal = animal;
 	}
 	
 	public Date getData() {
@@ -28,7 +32,9 @@ public class Consulta {
 	
 	@Override
 	public String toString() {
-		return "Consulta [data=" + data + ", nomeVeterinario=" + nomeVeterinario + "]";
+		return "Consulta [data=" + data + ", nomeVeterinario=" + nomeVeterinario + 
+				//(animal!=null?animal.toString():"Animal animal") + 
+				"]";
 	}	
 	
 }
